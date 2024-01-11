@@ -1,0 +1,38 @@
+<section class="section">
+  <form class="form" [formGroup]="postForm" (submit)="submitNewPost()">
+    <label for="title"></label>
+    <input
+      type="text"
+      id="title"
+      formControlName="title"
+      placeholder="Title..."
+      required
+    />
+    <input
+      type="text"
+      formControlName="description"
+      placeholder="Description..."
+      required
+    />
+    <input
+      type="text"
+      formControlName="photo"
+      placeholder="Photo URL..."
+      required
+    />
+    <input
+      type="text"
+      formControlName="country"
+      placeholder="Country name..."
+      required
+    />
+    <input
+      type="text"
+      formControlName="city"
+      placeholder="City name..."
+      required
+    />
+
+    <button class="button">SUBMIT</button>
+  </form>
+</section>

@@ -1,0 +1,36 @@
+{
+  "locations": [
+    {
+      "title": "Escape from the cold and gray - Cyprus",
+      "description": "Once upon a time, in the warm embrace of the Mediterranean, there was a vibrant town called Ayia Napa. Known for its golden beaches, crystal-clear waters, and lively atmosphere, Ayia Napa was a magnet for those seeking sun-soaked adventures. Our story begins with a group of friends—Emma, Jake, Mia, and Alex—who decided to embark on a memorable journey to this enchanting Cypriot paradise.",
+      "photo": "https://www.marinaayianapa.com/wp-content/uploads/2021/03/anm_final_view-3_aerial_updated_web_rgb.jpg",
+      "country": "Cyprus",
+      "city": "Ayia Napa",
+      "id": 0
+    },
+    {
+      "title": "Vienna",
+      "description": "In the heart of Europe, where the Danube River gracefully flows and history whispers through imperial palaces, Vienna transforms into a Winter Wonderland as snow blankets the cityscape. Our story unfolds in this magical setting, where a young couple, Clara and Stefan, decided to immerse themselves in the enchanting beauty of Vienna during the winter season.",
+      "photo": "https://eternalarrival.com/wp-content/uploads/2020/01/shutterstock_719357683-731x488.jpg",
+      "country": "Austria",
+      "city": "Vienna",
+      "id": 1
+    },
+    {
+      "id": 2,
+      "title": "Want a good kebab - visit Berlin",
+      "description": "Good kebab, yeah",
+      "country": "Germany",
+      "city": "Berlin",
+      "photo": "https://eternalarrival.com/wp-content/uploads/2020/08/shutterstock_1190371654-731x495.jpg"
+    },
+    {
+      "title": "Nothing to do in Winter Except Christmas markets - Dresden",
+      "description": "Kinda meh to be honest. Should have visted before the war",
+      "photo": "https://dmg.dresden.de/media/bilder/dmg/portfolio/eventmarketing/1920x1080-Dresden-Weihnachten-Frauenkirche-Kampagnenmotiv.jpg",
+      "country": "Germany",
+      "city": "Dresden",
+      "id": 3
+    }
+  ]
+}

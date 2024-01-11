@@ -1,0 +1,40 @@
+<div class="wrapper" *ngIf="editMode; then thenBlock; else elseBlock"></div>
+
+<div *ngIf="!location">
+  <h1>Loading...</h1>
+</div>
+
+<ng-template class="section" #thenBlock>
+  <form class="form wrapper" #f="ngForm" [formGroup]="editValuesForm" *ngIf="location">
+    <label for="title">Title</label>
+    <input id="title" type="text" formControlName="title" />
+    <label for="description">Description</label>
+    <input id="description" type="text" formControlName="description" />
+    <label for="photo">Photo URL</label>
+    <input id="photo" type="text" formControlName="photo" />
+    <label for="country">Country name</label>
+    <input id="country" type="text" formControlName="country" />
+    <label for="city">City name</label>
+    <input id="city" type="text" formControlName="city" />
+    <button (click)="updatePost()">SAVE</button>
+  </form>
+
+  <!-- <div *ngIf="location">
+      <app-edit-form [location]="location"></app-edit-form>
+    </div> -->
+</ng-template>
+
+<ng-template #elseBlock>
+  <div class="section wrapper" *ngIf="location">
+    <img src="{{ location.photo }}" alt="photo" class="photo" />
+    <h1>{{ location.title }}</h1>
+    <p>{{ location.description }}</p>
+    <h5>{{ location.city }} in {{ location.country }}</h5>
+    <div class="btn-wrapper">
+      <button class="btn-delete" (click)="deletePost()" [routerLink]="['/']">
+        DELETE
+      </button>
+      <button class="btn-edit" (click)="setEditModeToTrue()">EDIT</button>
+    </div>
+  </div>
+</ng-template>
